@@ -160,6 +160,6 @@ strong {
     color: #046EE4;
 }
 
-#login a:active, a:visited {
+#login a:active, #login a:visited {
     color: #023875;
 }
