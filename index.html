@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+<body>
+    <section class="img-section">
+        <img src="assets/Apex-logo.png" id="logo" alt="Logo">
+        <p>GROWTH ENGINEERED.</p>
+    </section>
+    <section class="form-section">
+        <section class="impact-section">
+            <p id="quote">Great brands don’t happen by chance — they rise by strategy. Visibility is <i><strong>power</strong></i>. Strategy is <i><strong>everything</strong></i>. To reach the apex, you must think <i>above</i> the crowd.</p>
+            <p id="impact-quote">Don't waste your time<br><strong>Sign up <i>now</i></strong> to get started.</p>
+        </section>
+        <!-- WRAPPER TO MAKE SHADOW VISIBLE -->
+        <section class="signup-wrapper">
+            <section class="signup-section">
+                <div id="signup-txt">Sign Up</div>
+                <form action="#" method="post" id="form">
+                    <div id="fname-wrapper">
+                        <label for="first_name" class="form-labels">FIRST NAME</label>
+                        <input required type="text" class="form-inputs" id="first_name">
+                    </div>
+                    <div id="sname-wrapper">
+                        <label for="second_name" class="form-labels">SECOND NAME</label>
+                        <input required type="text" class="form-inputs" id="second_name">
+                    </div>
+                    <div id="email-wrapper">
+                        <label for="email" class="form-labels">EMAIL</label>
+                        <input required type="email" class="form-inputs" id="email">
+                    </div>
+                    <div id="phone-wrapper">
+                        <label for="phone" class="form-labels">PHONE NUMBER</label>
+                        <input required type="tel" pattern="\(\d{2}\)\s?9?\d{4}-\d{4}" placeholder="(XX) 9XXXX-XXXX" class="form-inputs" id="phone">
+                    </div>
+                    <div id="password">
+                        <label for="password" class="form-labels">PASSWORD</label>
+                        <input required type="password" class="form-inputs" id="password">
+                    </div>
+                    <div id="password-confirm">
+                        <label for="password_confirm" class="form-labels">CONFIRM PASSWORD</label>
+                        <input required type="password" class="form-inputs" id="password_confirm">
+                    </div>
+                </form>
+            </section>
+        </section>
+        <!-- THIS SECTION MAKE SCALABILITY AND RESPONSIVENESS EASIER  -->
+        <section class="create-account-section">
+            <button type="submit" id="sub-btn">Create Account</button>
+            <p id="login">Already have an account? <a href="#">Log in</a></p>
+        </section>
+    </section>
+</body>
+</html>

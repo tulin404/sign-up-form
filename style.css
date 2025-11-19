@@ -1,0 +1,165 @@
+/* GENERAL */
+:root {
+    --secondary-section-color: #FAFAFA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100dvh;
+    width: 100%;
+}
+
+/* div, section {
+    border: 1px solid yellow;
+}*/
+
+strong {
+    font-weight: 600;
+}
+
+/* IMAGE SECTION */
+.img-section {
+    display: flex;
+    height: 100%;
+    flex: 1.25;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(assets/Skyscraper.jpg);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.img-section p {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    color: white;
+}
+
+#logo {
+    height: 128px;
+    width: auto;
+}
+
+/* FORM SECTION */
+.form-section {
+    height: 100dvh;
+    flex: 2;
+}
+
+.form-section > section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1em 2em;
+}
+
+/* IMPACT SECTION */
+.impact-section {
+    justify-content: center;
+    gap: 1em;
+    font-family: "Noto Sans";
+    font-size: 1.35em;
+    font-weight: 400;
+    height: 30%;
+    background-color: var(--secondary-section-color);
+}
+
+/* SIGN UP SECTION */
+.signup-wrapper {
+    /* PADDING OVERWRITE */
+    padding: 0 !important;
+    height: 35%;
+    background-color: var(--secondary-section-color);
+}
+
+.signup-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em;
+    padding: 1em 2em;
+    background-color: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 100%;
+}
+
+#signup-txt {
+    font-family: "Open Sans";
+    font-size: 2em;
+}
+
+/* INSIDE FORM */
+#form > div{
+    gap: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+#form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 1.5em;
+}
+
+.form-labels {
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 0.8em;
+    font-family: "Roboto Mono";
+}
+
+.form-inputs {
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    height: 2.4em;
+    width: 80%;
+    padding: 0 0.5em;
+}
+
+/* CREATE ACCOUNT SECTION */
+.create-account-section {
+    background-color: var(--secondary-section-color);
+    gap: 2em;
+    height: 35%;
+    /* OVERWRITING PADDING */
+    padding: 2em 2em !important;
+}
+
+#sub-btn {
+    color: white;
+    font-size: 1.1em;
+    background-color: #046EE4;
+    width: fit-content;
+    padding: 1.2em 3em;
+    border-radius: 1em;
+    transition: background-color 0.3s ease;
+}
+
+#sub-btn:hover {
+    background-color: #023875;
+    transition: 0.3s;
+}
+
+#login {
+    font-family: "Open Sans";
+}
+
+#login a {
+    text-decoration: none;
+    color: #046EE4;
+}
+
+#login a:active, a:visited {
+    color: #023875;
+}
