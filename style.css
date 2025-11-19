@@ -12,7 +12,7 @@
 
 body {
     display: flex;
-    height: 100svh;
+    min-height: 100svh;
     width: 100%;
 }
 
@@ -175,6 +175,8 @@ input {
 /* MEDIA QUERIES */
 @media (max-width: 680px) {
     body {
+        height: auto;
+        min-height: 100svh;
         flex-direction: column;
     }
     .form-section, .impact-section, .signup-wrapper, .create-account-section {
